@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="text-align: center;">
+    <h1>Details</h1>
+    <form id="detailsForm" onsubmit="update(event, this);">
+        <label for="username">Username: </label>
+        <input name='username'>
+        <br>
+        <br>
+        <label for="password">Password: </label>
+        <input name='password'>
+        <br>
+        <br>
+        <label for="dob">DOB: </label>
+        <input type='number' min="1900" max="2000" name='dob'>
+        <br>
+        <br>
+        <button>Save</button>
+        <button type="button" onclick="deleteUser()">Delete</button>
+    </form>
+    <script src='./scripts/consts.js'></script>
+    <script src='./scripts/details.js'></script>
+    <script>
+        load();
+    </script>
+</body>
+
+</html>
